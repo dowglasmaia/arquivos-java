@@ -13,7 +13,7 @@ public class Program {
 		
 		String path = "c:\\temp\\out.txt";
 		
-		try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, true))){
+		try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, true))){ //(path))){
 			 for(String line : lines) {
 				 bw.write(line); // ler a lina do arquivo, para gravar o mesmo
 				 bw.newLine(); // realiza a quebra de linha.
